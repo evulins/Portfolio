@@ -12,9 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0;
   color: #7d97ad;
-  letter-spacing: 2px;
   font-weight: 300;
 }
 
@@ -41,31 +39,31 @@ ul {
  .header {
   min-height: 56px;
   transition: min-height 0.3s;
+  margin-top: 1rem;
  }
 
  .header__logo {
   height: 72px;
-  margin: 1em 2em;
+  margin: 1rem 2rem;
   vertical-align: top;
 }
 
 .header__title {
   float: right;
-  margin: 0.75em 0.25em;
-  display: inline-block;
-  margin: 1em 2em;
-
+  margin: 0.75rem 0.75rem;
 }
 
 .header__title h1 {
 font-size: 2.5em;
 font-weight: 300;
-
+margin: 0;
+letter-spacing: 2px;
 }
 
 .header__title h2 {
-  font-weight: 300;
-  float: right;
+  font-weight: 400;
+  padding-left: 48%;
+  margin: 0;
 }
 
 hr {
@@ -85,11 +83,11 @@ hr {
  main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 100%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 /*
@@ -98,11 +96,15 @@ hr {
  * 
  */
 
-.content {
+.image {
   width: 100%;
+  margin: 2rem;
 }
 
-.main_image {
+.main__image > img {
+  width: 100%;
+}
+.main__image {
   width: 100%;
 }
 
@@ -112,23 +114,50 @@ hr {
  * Work
  * 
  */
-
- .work {
+ .featured__work {
+  margin-left: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  float: left;
+  font-size: 2em;
+ }
+ .work__list {
   flex-grow: 1;
   clear: both;
   padding: 1em;
+  width: 100%;
+  text-align: center;
 }
 
-.item {
-  clear: both;
-  margin: 24px 0;
+.app__list {
+  display: flex;
 }
-.item__thumbnail > img {
+
+.app {
+  clear: both;
+  margin: 0;
+  width: 33%;
+}
+
+.app__name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.app__thumbnail > img {
   width: 100%;
 }
 
-.item__thumbnail {
-  width: 30%;
+.app__thumbnail {
   float: left;
   margin-right: 1em;
+
+}
+
+.app a {
+  color:#2d3c49;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%
 }

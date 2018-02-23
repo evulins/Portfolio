@@ -12,7 +12,7 @@
    
   </head>
   <body>
-    <head class="header">
+    <header class="header">
       <div class="header__inner">
         <img class="header__logo" src="images/udacity.svg.png" alt="udacity logo">
         <div class="header__title">
@@ -21,42 +21,44 @@
         </div>
         <hr>
       </div>
-    </head>
+    </header>
 
     <main class="container">
-      <section class="content">
-        <img class="main__image" src="images/main.jpg" alt="main picture">
-      </section>
-
+      <div class="image">
+        <img class="main__image" src="images/main.png" alt="main picture">
+      </div>
       <section class="work">
-        <h2>Featured Work</h2>
+        <h1 class="featured__work">Featured Work</h1>
         <div class="work__list">
-          <ul class="item__list">
-            <li class="item">
-              <h3>APPIFY</h3>
-              <div class="item__thumbnail">
+          <ul class="app__list">
+            <li class="app">
                 <a href="https://github.com/udacity/Appify">
-                  <img class="appify" src="images/appify.png" alt="appify image">
-                </a>
-              </div>
-            </li>
-            <li class="item">
-              <h3>SUNFLOWER</h3>
-                <a href="https://github.com/udacity/Appify">
-                  <div class="item__thumbnail">
-                    <img class="sunflower" src="images/sunflower.png" alt="appify image">
+                  <div class="app__thumbnail">
+                    <img class="appify" src="images/appify.png" alt="appify image">
                   </div>
                 </a>
-              
+                <h3 class="app__name">APPIFY</h3>
+                <a href="https://github.com/udacity/Appify">https://github.com/udacity/Appify</a>
             </li>
-            <li class="item">
-              <h3>BOKEH</h3>
-              <div class="item__thumbnail">
-                <a href="https://github.com/udacity/Appify">
-                  <img class="bokeh" src="images/bokeh.png" alt="appify image">
+            <li class="app">
+                <a href="https://github.com/udacity/Sunflower">
+                  <div class="app__thumbnail">
+                    <img class="sunflower" src="images/sunflower.png" alt="sunflowe image">
+                  </div>
                 </a>
-              </div>
+                <h3 class="app__name">SUNFLOWER</h3>
+                <a href="https://github.com/udacity/Sunflower">https://github.com/udacity/Sunflower</a>
             </li>
+            <li class="app">
+                <a href="https://github.com/udacity/Bokeh">
+                  <div class="app__thumbnail">
+                    <img class="bokeh" src="images/bokeh.png" alt="bokeh image">
+                  </div>
+                </a>
+                <h3 class="app__name">BOKEH</h3>
+                <a href="https://github.com/udacity/Bokeh">https://github.com/udacity/Bokeh</a>
+            </li>
+          </ul>
         </div>
       </section>
       
@@ -65,8 +67,8 @@
 
     <footer>
       <ul class="footer">
-        <li class="contact__item"><a href="#">Contact</a></li>
-        <li class="contact__item"><a href="#">Follow me on Twitter</a></li>
+        <li class="contact__app"><a href="#">Contact</a></li>
+        <li class="contact__app"><a href="#">Follow me on Twitter</a></li>
       </ul>
     </footer>
   </body>
