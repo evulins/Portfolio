@@ -13,10 +13,12 @@ body {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
-  font-size: #7d97ad;
+  color: #7d97ad;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
-header, footer, section, div {
+header, main, footer, section, div{
   box-sizing: border-box;
 }
 
@@ -51,7 +53,6 @@ ul {
   float: right;
   margin: 0.75em 0.25em;
   display: inline-block;
-  font-size: #7d97ad
   margin: 1em 2em;
 
 }
@@ -73,4 +74,61 @@ hr {
   height: 3px;
   background: #7d97ad;
   background-image: linear-gradient(to right, #2d3c49, #7d97ad);
+}
+
+/*
+ *
+ * Main
+ * 
+ */
+
+ main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+ *
+ * Content
+ * 
+ */
+
+.content {
+  width: 100%;
+}
+
+.main_image {
+  width: 100%;
+}
+
+
+ /*
+ *
+ * Work
+ * 
+ */
+
+ .work {
+  flex-grow: 1;
+  clear: both;
+  padding: 1em;
+}
+
+.item {
+  clear: both;
+  margin: 24px 0;
+}
+.item__thumbnail > img {
+  width: 100%;
+}
+
+.item__thumbnail {
+  width: 30%;
+  float: left;
+  margin-right: 1em;
 }
