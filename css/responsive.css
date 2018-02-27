@@ -5,7 +5,7 @@
 
 
 @media screen and (max-width: 600px) {
-  
+
   .header {
     text-align: center;
   }
@@ -79,6 +79,7 @@
   .app__thumbnail {
     max-height: 156px;
   }
+  
   .app__name {
     font-size: 1.6em;
   }
